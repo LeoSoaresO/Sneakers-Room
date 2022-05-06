@@ -1,0 +1,42 @@
+@import '../../../styles.scss';
+
+.nav {
+    height: 15vh;
+    color: $text;
+    background-color: $cream;
+    .title{
+        color: $black;
+    }
+    .links {
+        li {
+            font-size: 19px;
+            font-weight: 400;
+            color: $text;
+            cursor: pointer;
+            margin: 0px 3px;
+        } 
+        span {
+             &::before {
+                content: "";
+                display: block;
+                width: 30px;
+                background-color: $black;
+                margin: 20px 0px;
+                height: 2px;
+                rotate: 90deg;
+                border-radius: 1px;
+            }
+        }
+    }
+    .logo {
+        width: 270px;
+        cursor: pointer;
+    }
+}
+
+.active {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    color: $black !important;
+    margin: 0px;
+}

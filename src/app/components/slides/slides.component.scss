@@ -1,0 +1,26 @@
+@import '../../../styles.scss';
+
+.slides {
+    background-color: $cream;
+    .carousel-manual-controls {
+        box-shadow: 0px 0px 105px -12px rgba(49,49,49,0.52);
+        padding: 0px;
+    }
+    .carousel-settings {
+        height: 85vh;
+        .img-settings {
+            height: 100%;
+            object-fit: cover;
+        }
+        .carousel-description {
+            width: 20%;
+            background: $cream;
+            right: 0%;
+            bottom: 24rem;
+            left: 6%;
+            border-radius: 7px;
+            box-shadow: 1px 75px 121px -29px rgba(49,49,49,0.91);
+            color: $black;
+        }
+    }
+}
