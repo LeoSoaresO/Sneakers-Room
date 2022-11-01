@@ -1,0 +1,66 @@
+{
+  "home": [
+    {
+      "id": 1,
+      "title": "Nike Air Force 1 x Carhartt WIP",
+      "description": "Clássico da década de 80 em versão reinventada",
+      "image": "https://images.unsplash.com/photo-1549298916-f52d724204b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1113&q=80"
+    },
+    {
+      "id": 2,
+      "title": "Nike AirJordan 1",
+      "description": "Clássico da década de 80 em versão reinventada",
+      "image": "https://images.unsplash.com/photo-1542219550-37153d387c27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      "id": 3,
+      "title": "Adidas Simple Skate",
+      "description": "Clássico da década de 80 em versão reinventada",
+      "image": "https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      "id": 4,
+      "title": "Nike Air Jordan 1 X Travis Scott",
+      "description": "Clássico da década de 80 em versão reinventada",
+      "image": "https://images.unsplash.com/photo-1559479083-f3b234ad0d53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    }
+  ],
+  "release": [
+    {
+      "id": 1,
+      "title": "Nike Dunk Low Retro",
+      "description": "Dunk 'Panda' 2022 ",
+      "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a3e7dead-1ad2-4c40-996d-93ebc9df0fca/dunk-low-retro-mens-shoes-8t3K7k.png"
+    },
+    {
+      "title": "Air Jordan 1 Low",
+      "description": "Simples & Clássico",
+      "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/89b1d290-5e2a-44a5-a260-2e9d628ca670/air-jordan-1-low-womens-shoe-V7z3v6.png",
+      "id": 2
+    },
+    {
+      "title": "Nike Air Force 1 '07 LV8",
+      "description": "O Sneaker de um astronauta",
+      "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ce6376fc-5fa4-49e8-aa4b-352135227709/air-force-1-07-lv8-mens-shoes-NCHHsv.png",
+      "id": 3
+    },
+    {
+      "title": "Adidas Superstar",
+      "description": "O Nome fala por sí só",
+      "image": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/228f1f8f22ab4025b6fdae8b010f145b_9366/tenis-superstar.jpg",
+      "id": 4
+    },
+    {
+      "title": "Puma RS Dreamer 1",
+      "description": "Direto de Dreamville",
+      "image": "https://gdlp.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/9/193990_03-1.jpg",
+      "id": 5
+    },
+    {
+      "title": "Forum Buckle Low",
+      "description": "BAD BUNNYYYYYY",
+      "image": "https://maze.cdn.plataformaneo.com.br/produto/multifotos/hd/20211228132731_186999814_DZ.png",
+      "id": 6
+    }
+  ]
+}

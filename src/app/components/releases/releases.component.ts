@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ApiService } from 'src/app/api.service';
-@Component({
-  selector: 'app-slides',
-  templateUrl: './slides.component.html',
-  styleUrls: ['./slides.component.scss']
-})
-export class SlidesComponent implements OnInit {
 
-  data:any;
+@Component({
+  selector: 'app-releases',
+  templateUrl: './releases.component.html',
+  styleUrls: ['./releases.component.scss']
+})
+export class ReleasesComponent implements OnInit {
+
+  releaseData:any;
 
   constructor(
     private http: HttpClient,
@@ -16,13 +17,13 @@ export class SlidesComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getDataHome();
+    this.getReleases();
   }
 
-  getDataHome(){
-    this.apiService.getDataHome().subscribe((response:any) =>{
+  getReleases(){
+    this.apiService.getRelease().subscribe((response:any) =>{
       console.log(response);
-      this.data = response;
+      this.releaseData = response;
     })
   }
 

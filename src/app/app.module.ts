@@ -9,6 +9,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrandComponent } from './pages/brand/brand.component';
 import { SlidesComponent } from './components/slides/slides.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReleasesComponent } from './components/releases/releases.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { SlidesComponent } from './components/slides/slides.component';
     HeaderComponent,
     FooterComponent,
     BrandComponent,
-    SlidesComponent
+    SlidesComponent,
+    ReleasesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

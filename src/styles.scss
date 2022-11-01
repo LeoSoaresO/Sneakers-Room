@@ -1,5 +1,8 @@
 @import './app/styles/colors.scss';
+@import './app/styles/components.scss';
 
 * {
     font-family: 'DM Sans', sans-serif;
 }
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

@@ -1,0 +1,10 @@
+@import './colors.scss';
+
+.btn-buy {
+    width: 100%;
+    background-color: $black !important;
+    color: $cream !important;
+    &:hover {
+        background-color: darken($color: $black, $amount: 15) !important;
+    }
+}

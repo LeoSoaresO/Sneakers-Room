@@ -1,42 +1,13 @@
 <section class="slides">
-    <div id="carouselExampleControls" class="carousel slide carousel-manual-controls" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item carousel-settings active">
-                <img src="https://images.unsplash.com/photo-1549298916-f52d724204b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1113&q=80" class="d-block w-100 img-settings" alt="...">
-                <div class="carousel-caption carousel-description d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                  </div>
-            </div>
-            <div class="carousel-item carousel-settings">
-                <img src="https://images.unsplash.com/photo-1542219550-37153d387c27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="d-block w-100 img-settings" alt="...">
-                <div class="carousel-caption carousel-description d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                  </div>
-            </div>
-            <div class="carousel-item carousel-settings">
-                <img src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="d-block w-100 img-settings" alt="...">
-                <div class="carousel-caption carousel-description d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                  </div>
-            </div>
-            <div class="carousel-item carousel-settings">
-                <img src="https://images.unsplash.com/photo-1559479083-f3b234ad0d53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="d-block w-100 img-settings" alt="...">
-                <div class="carousel-caption carousel-description d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                  </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+    <ngb-carousel *ngIf="data">
+	<ng-template ngbSlide *ngFor="let d of data">
+		<div class="picsum-img-wrapper carousel-settings">
+			<img [src]="d.image" class="d-block w-100 img-settings" alt="Random first slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3>{{d.title}}</h3>
+			<p>{{d.description}}</p>
+		</div>
+	</ng-template>
+</ngb-carousel>
 </section>
