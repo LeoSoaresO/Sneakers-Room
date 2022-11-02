@@ -62,5 +62,55 @@
       "image": "https://maze.cdn.plataformaneo.com.br/produto/multifotos/hd/20211228132731_186999814_DZ.png",
       "id": 6
     }
+  ],
+  "women": [
+    {
+      "title": "Nike Burrow",
+      "description": "Comforto e Estilo",
+      "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/640a787d-133d-47de-b1f9-5c15ecf0d223/burrow-womens-slipper-Mwlm1j.png",
+      "id": 1
+    },
+    {
+      "title": "Nike ZoomX",
+      "description": "Nas Nuvens",
+      "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/849c8d73-9903-49fc-a882-57e4836467d1/zoomx-invincible-run-flyknit-2-womens-road-running-shoes-BZhHGz.png",
+      "id": 2
+    },
+    {
+      "title": "Nike Blaze Mid",
+      "description": "Combina com tudo",
+      "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ecfe5bb4-5bad-499c-a5ee-aeb236cfe705/blazer-mid-premium-womens-shoes-lgMh8j.png",
+      "id": 3
+    },
+    {
+      "title": "Puma Cali Dream",
+      "description": "Californication",
+      "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/383112/03/sv01/fnd/BRA/w/2000/h/2000/fmt/png",
+      "id": 4
+    },
+    {
+      "title": "Puma TRC Blaze",
+      "description": "Esse cara é foda",
+      "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/388588/03/sv01/fnd/BRA/w/1000/h/1000/fmt/png",
+      "id": 5
+    },
+    {
+      "title": "Adidas Superstar",
+      "description": "O Clássico",
+      "image": "https://static.dafiti.com.br/p/adidas-Originals-T%C3%AAnis-Adidas-Originals-Superstar-Lil%C3%A1s-6805-72647401-1-zoom.jpg",
+      "id": 6
+    },
+    {
+      "title": "NIke Renew",
+      "description": "Mais Conforto, Mais Rápido",
+      "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8bcf4d5d-1d63-4845-81a4-b907925bd9fa/renew-in-season-tr-12-womens-training-shoes-bttk75.png",
+      "id": 7
+    },
+    {
+      "title": "NIke Air Max Pre-Day",
+      "description": "O Hypado",
+      "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1b98184b-d358-4377-8d1e-f5468ebadbcb/air-max-pre-day-womens-shoes-TNgd9M.png",
+      "id": 8
+    }
   ]
 }

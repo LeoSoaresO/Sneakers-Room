@@ -19,4 +19,8 @@ export class ApiService {
   getRelease() {
     return this.http.get(`${API.URL}/release`)
   }
+
+  getWCollection() {
+    return this.http.get(`${API.URL}/women`)
+  }
 }

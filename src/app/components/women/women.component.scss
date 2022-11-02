@@ -1,0 +1,43 @@
+@import '../../../styles.scss';
+
+.banner {
+    height: 85vh;
+    background-image: url('https://images.unsplash.com/photo-1643302214215-46fd832d3c2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 25%;
+    .title {
+        text-align: center;
+        color: $cream;
+        padding-top: 15%;
+        h1 {
+            font-size: 20vh;
+            font-weight: bold;
+        }
+        p {
+            font-size: 3vh;
+        }
+    }       
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    .card{
+        border-radius: 10px;
+        border: 3px double $pink;
+        padding: 0px;
+        margin: 40px;
+        transition: ease-out 0.4s;
+        &:hover {
+            flex: 0 0 20%;
+            max-width: 20%;
+            margin: 10px;
+
+          }
+    }
+    .card-img-top {
+        height: 340px;
+        object-fit: cover;
+    }
+}

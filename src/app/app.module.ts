@@ -12,6 +12,8 @@ import { SlidesComponent } from './components/slides/slides.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReleasesComponent } from './components/releases/releases.component';
+import { WomenComponent } from './components/women/women.component';
+import { MapComponent } from './components/map/map.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ReleasesComponent } from './components/releases/releases.component';
     FooterComponent,
     BrandComponent,
     SlidesComponent,
-    ReleasesComponent
+    ReleasesComponent,
+    WomenComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,

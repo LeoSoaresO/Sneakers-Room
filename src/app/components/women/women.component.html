@@ -1,0 +1,18 @@
+<section>
+    <div class="banner">
+        <div class="title">
+            <h1 class="text-uppercase">Feminino</h1>
+            <p>Coleção Feminina dos melhores Sneakers</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card col-2" *ngFor="let w of womenCollection">
+            <img [src]="w.image" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{w.title}}</h5>
+                <p class="card-text">{{w.description}}</p>
+                <a href="#" class="btn btn-buy">Ver Mais!</a>
+            </div>
+        </div>
+    </div>
+</section>
