@@ -14,7 +14,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReleasesComponent } from './components/releases/releases.component';
 import { WomenComponent } from './components/women/women.component';
 import { MapComponent } from './components/map/map.component';
-
+import { LoginComponent } from './components/login/login.component';
+import { ForgotPasswordComponent } from './components/login/forgot-password/forgot-password.component';
+import { CreateAccountComponent } from './components/login/create-account/create-account.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,10 @@ import { MapComponent } from './components/map/map.component';
     SlidesComponent,
     ReleasesComponent,
     WomenComponent,
-    MapComponent
+    MapComponent,
+    LoginComponent,
+    CreateAccountComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,
