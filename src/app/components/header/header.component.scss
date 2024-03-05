@@ -4,6 +4,7 @@
     height: 12vh;
     color: $text;
     background-color: $cream;
+    @extend .box-shadow-default;
     .title{
         color: $black;
     }

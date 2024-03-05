@@ -78,6 +78,19 @@
                   height: 100%;
                   width: 100%;
                 }
+                button {
+                  position: absolute;
+                  width: 35px;
+                  height: 35px;
+                  border: none;
+                  border-radius: 50%;
+                  transition: 0.5s ease;
+                  &:hover{
+                    background-color: $black;
+                    color: $cream;
+                    transition: 0.5s ease;
+                  }
+                }
             }
             .form{
                 width: 100%;

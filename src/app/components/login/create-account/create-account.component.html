@@ -11,21 +11,24 @@
          class="hide" name="photo" id="photo" ngbTooltip="{{msg}}">
         <div class="data_img">
           <img src="{{src}}" alt="">
+          <button *ngIf="file"(click)="removePhoto()" ngbTooltip="Remover Imagem">X</button>
         </div>
-        <div class="form">
+        <div class="form" [formGroup]="form">
           <div class="input-default">
             <label for="name">Nome</label>
-            <input type="name" placeholder="Digite seu Nome">
+            <input type="name" (keyup)="checkForm()" formControlName="name" placeholder="Digite seu Nome">
           </div>
           <div class="input-default">
             <label for="email">Email</label>
-            <input type="email" placeholder="Digite seu email">
+            <input type="email" (keyup)="validateEmail(); checkForm()" formControlName="email" placeholder="Digite seu email">
+            <span class="invalid" *ngIf="invalid">Email Inválido</span>
           </div>
           <div class="input-default">
             <label for="pass">Senha</label>
-            <input type="password" placeholder="Digite sua senha">
+            <input type="password" (keyup)="checkForm()" formControlName="password" placeholder="Digite sua senha">
           </div>
-          <button class="btn btn-buy">Entrar</button>
+          <button class="btn btn-buy" [disabled]="fieldsEmpty" (click)="createAccount()">Criar Conta</button>
+          <span class="invalid" *ngIf="fieldsEmpty">Algum campo está vazio.</span>
         </div>
         <div class="options">
           <span class="create" routerLink="/login">Já tenho conta</span>
