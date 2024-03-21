@@ -20,10 +20,10 @@ export class SlidesComponent implements OnInit {
   }
 
   getDataHome(){
-    this.apiService.getDataHome().subscribe((response:any) =>{
-      console.log(response);
-      this.data = response;
-    })
+    // this.apiService.getDataHome().subscribe((response:any) =>{
+    //   console.log(response);
+    //   this.data = response;
+    // })
   }
 
 }

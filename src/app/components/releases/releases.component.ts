@@ -21,10 +21,10 @@ export class ReleasesComponent implements OnInit {
   }
 
   getReleases(){
-    this.apiService.getRelease().subscribe((response:any) =>{
-      console.log(response);
-      this.releaseData = response;
-    })
+    // this.apiService.getRelease().subscribe((response:any) =>{
+    //   console.log(response);
+    //   this.releaseData = response;
+    // })
   }
 
 }

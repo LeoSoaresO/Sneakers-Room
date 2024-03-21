@@ -1,3 +1,4 @@
+import { ApiService } from 'src/app/api.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { convertImageToBase64 } from 'src/app/utils/convertFileToBase64';
@@ -22,7 +23,8 @@ export class CreateAccountComponent implements OnInit {
   uploadIcon = "../../../../assets/img/upload.svg"
 
   constructor(
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private service: ApiService
   ) { }
 
   ngOnInit(): void {
@@ -87,7 +89,14 @@ export class CreateAccountComponent implements OnInit {
         name: this.form.value.name,
         email: this.form.value.email,
         password: this.form.value.password,
+        role: 'user',
       }
+
+      this.service.register(data).subscribe((res:any) => {
+        console.log(res);
+
+      })
+
     }
 
 }

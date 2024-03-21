@@ -4,7 +4,7 @@
 
 export const API = {
   production: false,
-  URL: "http://localhost:3000"
+  URL: "https://marketplace-online-406617.uc.r.appspot.com"
 }
 
 /*

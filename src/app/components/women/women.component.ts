@@ -21,10 +21,10 @@ export class WomenComponent implements OnInit {
   }
 
   getWCollection(){
-    this.apiService.getWCollection().subscribe((response:any) =>{
-      console.log(response);
-      this.womenCollection = response;
-    })
+    // this.apiService.getWCollection().subscribe((response:any) =>{
+    //   console.log(response);
+    //   this.womenCollection = response;
+    // })
   }
 
 }

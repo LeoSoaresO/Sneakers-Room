@@ -41,7 +41,8 @@ import { CreateAccountComponent } from './components/login/create-account/create
     NgbModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
