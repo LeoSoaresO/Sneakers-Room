@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/api.service';
-import { getStorage } from "src/app/utils/storage";
 
 @Component({
   selector: 'app-home',
@@ -9,7 +8,6 @@ import { getStorage } from "src/app/utils/storage";
 })
 export class HomeComponent implements OnInit {
 
-  get = getStorage;
   token:any;
 
   constructor(
@@ -17,7 +15,6 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.token = this.get('token');
     this.getUser();
   }
 
