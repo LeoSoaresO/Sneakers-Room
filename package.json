@@ -8,7 +8,7 @@
     "json:server": "json-server --watch db.json",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --prod --output-path docs --base-href /sneakers-room/"
+    "deploy": "ng build --prod --output-path docs --base-href /Sneakers-Room/"
   },
   "private": true,
   "dependencies": {
