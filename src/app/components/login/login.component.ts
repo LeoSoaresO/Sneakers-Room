@@ -59,11 +59,11 @@ export class LoginComponent implements OnInit {
 
     this.service.login(data).subscribe((res:any) => {
       if(res.token){
-        let user = {
-          token: res.toen,
+        let d = {
+          token: res.token,
           email: data.email
         }
-        this.set('user', user)
+        this.set('token', d)
         this.router.navigate(['']);
       }
     })

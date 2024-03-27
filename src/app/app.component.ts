@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { getStorage } from "src/app/utils/storage";
+import { checkLogin } from "src/app/utils/checkLogin";
 
 
 @Component({
@@ -10,19 +10,12 @@ import { getStorage } from "src/app/utils/storage";
 })
 export class AppComponent implements OnInit {
   title = 'SneakersRoom';
-  user = getStorage('user')
+	check = checkLogin
 
   constructor(private router: Router){}
 
   ngOnInit(): void {
-    this.checkLogin()
+    this.check()
   }
-
-  checkLogin(){
-    if (this.user) {
-      this.router.navigate(['']);
-    }
-  }
-
 
 }

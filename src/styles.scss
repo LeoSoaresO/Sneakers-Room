@@ -1,17 +1,16 @@
 @import './app/styles/colors.scss';
 @import './app/styles/components.scss';
+@import '~bootstrap/scss/bootstrap';
 
 * {
     font-family: 'DM Sans', sans-serif;
 }
 input{
-  &:focus{
-    outline: none
-  }
-  &:focus-visible{
-    border-color: $dark_blue !important;
-}
+		&:focus{
+			outline: none
+		}
+		&:focus-visible{
+			border-color: $dark_blue !important;
+	}
 }
 
-/* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';

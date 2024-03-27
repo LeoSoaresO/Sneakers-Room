@@ -15,17 +15,6 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getUser();
-  }
-
-  getUser(){
-    console.log(this.token);
-
-    if (this.token) {
-      this.service.getUser(this.token).subscribe((res:any) =>{
-        console.log(res);
-      })
-    }
   }
 
 }

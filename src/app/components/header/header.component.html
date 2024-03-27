@@ -7,11 +7,15 @@
           <div class="d-flex links">
               <li class="nav-link" routerLink="" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">Home</li>
 
-                <li class="nav-link" routerLink="/brand" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" href="#">Brand</li>
-                <li class="nav-link" routerLink="/login" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" href="#">Login</li>
-                <li class="nav-link" href="#">Woman</li>
+                <!-- <li class="nav-link" routerLink="/brand" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" href="#">Brand</li> -->
+                <!-- <li class="nav-link" href="#">Woman</li> -->
                 <span></span>
-                <li class="nav-link divider" routerLink="/account" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">Account</li>
+                <li *ngIf="!user" class="nav-link" routerLink="/login" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" href="#">Login</li>
+								<div *ngIf="user" class="d-flex">
+									<img [src]="user.photo" alt="">
+									<li class="nav-link divider" routerLink="/account" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}">Account</li>
+								</div>
+                <li *ngIf="user" class="nav-link" (click)="logout()">Logout</li>
           </div>
         </div>
       </nav>

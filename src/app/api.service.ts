@@ -24,7 +24,8 @@ export class ApiService {
 
   private auth = {
     headers: new HttpHeaders({
-        'Authorization': `Bearer ${this.token}`
+        'Authorization': `Bearer ${this.token.token}`,
+				'email': `${this.token.email}`
       })
   }
 
